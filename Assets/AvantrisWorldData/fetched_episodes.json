@@ -1,0 +1,490 @@
+{
+    "icebound": [
+        {
+            "num": "Ep. 1",
+            "title": "Dire Straits",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 2",
+            "title": "Endurance",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 3",
+            "title": "Fire & Food",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 4",
+            "title": "Saved by the Hell",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 5",
+            "title": "She Was Wrath",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 6",
+            "title": "Slippery Slope",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 7",
+            "title": "Steel & Silence",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 8",
+            "title": "The Rest of Your Life",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 9",
+            "title": "The Southward Gambit",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 10",
+            "title": "Unblinking",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        }
+    ],
+    "curse-of-strahdanya": [
+        {
+            "num": "Ep. 1",
+            "title": "Among Monsters",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 2",
+            "title": "Blood Moon",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 3",
+            "title": "Cradle to Grave",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 4",
+            "title": "Creatures of the Night",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 5",
+            "title": "Creeping Rot",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 6",
+            "title": "Death House",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 7",
+            "title": "End of All Hope",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 8",
+            "title": "Fallen From Grace",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 9",
+            "title": "Lament of the Damned",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 10",
+            "title": "Malediction",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 11",
+            "title": "Mother's Malice",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 12",
+            "title": "Phantasmagoria",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 13",
+            "title": "Prayer for the Dying",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 14",
+            "title": "Sins of the Father",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 15",
+            "title": "Something Wicked",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 16",
+            "title": "Suffer the Little Children",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 17",
+            "title": "The Devil Cried",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 18",
+            "title": "The Doomed Expedition",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 19",
+            "title": "The Raven Child",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 20",
+            "title": "The Thin Line Between Love and Hate",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 21",
+            "title": "Tomb of Sorrows",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 22",
+            "title": "Widow's Watch",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        }
+    ],
+    "beneath-dark-wings": [
+        {
+            "num": "Ep. 1",
+            "title": "Beast in the Machine",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 2",
+            "title": "Beyond the Gilded Cage",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 3",
+            "title": "Children of the Damned",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 4",
+            "title": "Dream of Mirrors",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 5",
+            "title": "Eruption",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 6",
+            "title": "Executive Power",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 7",
+            "title": "Hoot and Holler",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 8",
+            "title": "Hungry Like the Wolf",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 9",
+            "title": "It Begins at the Crossroads",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 10",
+            "title": "Lambs to the Slaughter",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 11",
+            "title": "Land of the Lost Horizon",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 12",
+            "title": "Loss of Innocence",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 13",
+            "title": "Lying Eyes",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 14",
+            "title": "Maze of Mysteries",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 15",
+            "title": "Paradise Lost",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 16",
+            "title": "Roar of the Bull",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 17",
+            "title": "Sealed Fate",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 18",
+            "title": "Temple of Gloom",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 19",
+            "title": "The Enemy Within",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 20",
+            "title": "The Final Sacrifice",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 21",
+            "title": "The Pass",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 22",
+            "title": "The Sound of Thunder",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 23",
+            "title": "The Way the Wind Blows",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 24",
+            "title": "The Webs They Weave",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 25",
+            "title": "Timeless Tales",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 26",
+            "title": "Trapped in Amber",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 27",
+            "title": "Trouble Brewing",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 28",
+            "title": "Unnatural Law",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 29",
+            "title": "Valley of Shadow",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        }
+    ],
+    "edge-of-midnight": [
+        {
+            "num": "Ep. 1",
+            "title": "Crooked",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 2",
+            "title": "Down The Rabbit Hole",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 3",
+            "title": "Gathered for the Feast",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 4",
+            "title": "Hard Knock Life",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 5",
+            "title": "Haunting Memories",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 6",
+            "title": "Her Limbs are Thrawn",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 7",
+            "title": "House of Lament",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 8",
+            "title": "Infested",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 9",
+            "title": "Inner Demons",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 10",
+            "title": "Judgement of Heaven",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 11",
+            "title": "Last Rites",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 12",
+            "title": "Mass Hysteria",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 13",
+            "title": "Mob Rules",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 14",
+            "title": "Not a Prisoner",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 15",
+            "title": "Pigeonholed",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 16",
+            "title": "Pound of Flesh",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 17",
+            "title": "Revelations",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 18",
+            "title": "The Ballad of William Van Brunt",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 19",
+            "title": "The Bell Tolls For Thee",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 20",
+            "title": "The Old Black Train",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 21",
+            "title": "Toys in the Attic",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 22",
+            "title": "Turned to Sin",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 23",
+            "title": "Within Temptation",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        }
+    ],
+    "once-upon-a-witchlight": [],
+    "uprooted": [
+        {
+            "num": "Ep. 1",
+            "title": "Analysis Paralysis",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 2",
+            "title": "Cat and Mouse",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 3",
+            "title": "Cult of Criminality",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 4",
+            "title": "Fast Forward",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 5",
+            "title": "For Whom the Bell Bongs",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 6",
+            "title": "Jailhouse Rooster",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 7",
+            "title": "Prodigal Son",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 8",
+            "title": "River's Eleven",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 9",
+            "title": "Roughin' It",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 10",
+            "title": "What We Do in the Shadows",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        },
+        {
+            "num": "Ep. 11",
+            "title": "Where's the Duck Sauce?",
+            "summary": "A thrilling episode in the Legends of Avantris chronicles."
+        }
+    ],
+    "stardust-rhapsody": [],
+    "neon-odyssey": []
+}

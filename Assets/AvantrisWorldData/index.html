@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the D&D homebrew world of Legends of Avantris. Browse campaigns, characters, locations, edit the lore database, and play interactive text-based RPG quests with D20 dice checks.">
+    <title>Legends of Avantris: World Explorer & RPG</title>
+    <!-- Google Fonts for rich fantasy feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-logo">
+            <h1 id="app-title">Legends of Avantris</h1>
+            <span class="subtitle">World Explorer & RPG</span>
+        </div>
+        <nav class="app-nav">
+            <div class="nav-group">
+                <span class="nav-group-label">Archives</span>
+                <button class="nav-tab active" id="tab-codex" onclick="switchTab('codex')">Lore Codex</button>
+                <button class="nav-tab" id="tab-timeline" onclick="switchTab('timeline')">Chronicles</button>
+                <button class="nav-tab" id="tab-editor" onclick="switchTab('editor')">World Builder</button>
+            </div>
+            <div class="nav-separator"></div>
+            <div class="nav-group">
+                <span class="nav-group-label">Game</span>
+                <button class="nav-tab" id="tab-adventure" onclick="switchTab('adventure')">Adventure Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="app-content">
+        <!-- SPEECH BUBBLE FOR CHARACTER QUOTES -->
+        <div id="quote-bubble-container" class="hidden">
+            <div class="speech-bubble">
+                <span class="bubble-close" onclick="closeQuoteBubble()">&times;</span>
+                <p id="quote-bubble-text">"Did you know..."</p>
+                <cite id="quote-bubble-author">- Chuckles</cite>
+            </div>
+        </div>
+
+        <!-- SECTION: LORE CODEX -->
+        <section id="section-codex" class="tab-panel active">
+            <div class="codex-layout">
+                <!-- Sidebar: Campaigns & Categories -->
+                <aside class="codex-sidebar">
+                    <div class="sidebar-group">
+                        <h3>Campaigns</h3>
+                        <div class="campaign-buttons" id="campaign-select-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div class="sidebar-group">
+                        <h3>Category</h3>
+                        <div class="category-buttons">
+                            <button class="cat-btn active" id="cat-btn-chars" onclick="switchCodexCategory('characters')">Characters</button>
+                            <button class="cat-btn" id="cat-btn-locs" onclick="switchCodexCategory('locations')">Locations</button>
+                            <button class="cat-btn" id="cat-btn-rules" onclick="switchCodexCategory('rules')">D&D Rules/Compendium</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Center: Entity Cards Grid -->
+                <div class="codex-main">
+                    <div class="search-bar">
+                        <input type="text" id="codex-search" placeholder="Search the archives..." oninput="filterCodex()">
+                    </div>
+                    <div class="entity-grid" id="entity-grid-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Right: Detailed Inspector -->
+                <aside class="codex-inspector" id="entity-inspector">
+                    <div class="inspector-placeholder" id="inspector-placeholder">
+                        <div class="d20-icon-bg">⯃</div>
+                        <p>Select a character or location from the codex to inspect their stats and lore.</p>
+                    </div>
+                    <div class="inspector-content hidden" id="inspector-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SECTION: ADVENTURE MODE -->
+        <section id="section-adventure" class="tab-panel">
+            <div class="adventure-setup" id="adventure-setup-screen">
+                <h2>Choose Your Quest</h2>
+                <p class="setup-intro">Step into the chaotic D&D world of Avantris. Choose a campaign scenario, select your character, and embark on an adventure driven by your choices and the roll of the D20.</p>
+                
+                <div class="setup-grid">
+                    <div class="setup-card" id="setup-quest-selection">
+                        <h3>1. Select a Quest</h3>
+                        <div class="quest-options-list" id="quest-options-container">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="setup-card" id="setup-char-selection">
+                        <h3>2. Select Your Hero</h3>
+                        <p class="select-hint">Pick a hero. Each has distinct modifiers based on their D&D stats!</p>
+                        <div class="hero-options-grid" id="hero-options-container">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setup-action">
+                    <button class="btn btn-primary btn-large" id="btn-start-adventure" onclick="startAdventure()" disabled>Begin Adventure</button>
+                </div>
+            </div>
+
+            <div class="adventure-gameplay hidden" id="adventure-gameplay-screen">
+                <div class="gameplay-layout">
+                    <!-- Left: Story & Logs -->
+                    <div class="gameplay-story-panel">
+                        <div class="story-scroll" id="story-log-container">
+                            <!-- Animated story elements go here -->
+                        </div>
+                        <div class="story-actions" id="story-actions-container">
+                            <!-- Buttons representing player choices -->
+                        </div>
+                    </div>
+
+                    <!-- Middle: Tactical Zone Map & Combat Grid -->
+                    <div class="gameplay-tactical-panel" id="adventure-tactical-panel">
+                        <!-- Monster Hunter Minimap -->
+                        <div class="tactical-minimap-card">
+                            <div class="minimap-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(251, 191, 36, 0.15); padding-bottom: 0.4rem; margin-bottom: 0.5rem;">
+                                <h4 style="margin: 0; border: none; padding: 0;">Zone Map (Monster Hunter)</h4>
+                                <button class="btn btn-secondary btn-small" id="btn-toggle-zoom" onclick="toggleMapZoom()" style="font-size: 0.7rem; padding: 4px 10px;">View World Map</button>
+                            </div>
+                            <div class="minimap-grid" id="minimap-zone-container">
+                                <!-- Populated dynamically by JS -->
+                            </div>
+                            <div id="minimap-details" class="minimap-details-text" style="font-size: 0.8rem; color: var(--color-text-muted); background: rgba(12, 8, 18, 0.3); padding: 0.6rem; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.02); margin-top: 0.5rem; line-height: 1.4;">
+                                Zoom in/out to view broad campaign perspective.
+                            </div>
+                        </div>
+
+                        <!-- Battle Grid (D&D / Sword & Staff Grid Combat) -->
+                        <div class="tactical-battle-card" id="tactical-battle-card">
+                            <div class="battle-header">
+                                <h4>Grid Combat (Tactical D&D)</h4>
+                                <span class="battle-turn" id="battle-turn-indicator">Your Turn</span>
+                            </div>
+                            <div class="battle-grid-board" id="battle-grid-board">
+                                <!-- Generated by JS -->
+                            </div>
+                            <div class="battle-ability-selector" id="battle-ability-selector">
+                                <!-- Generated by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Character Status Sheet -->
+                    <aside class="gameplay-status-panel">
+                        <div class="status-card">
+                            <div class="status-header">
+                                <h3 id="status-char-name">Gideon Coal</h3>
+                                <span class="status-class-race" id="status-char-race-class">Fire Genasi • Fighter</span>
+                            </div>
+                            <div class="hp-bar-container">
+                                <div class="hp-bar-label">HP: <span id="status-hp-current">28</span> / <span id="status-hp-max">28</span></div>
+                                <div class="hp-bar-outer">
+                                    <div class="hp-bar-inner" id="status-hp-bar" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div class="status-stats-grid">
+                                <div class="status-stat"><span class="stat-lbl">STR</span><span class="stat-val" id="s-str">+3</span></div>
+                                <div class="status-stat"><span class="stat-lbl">DEX</span><span class="stat-val" id="s-dex">+1</span></div>
+                                <div class="status-stat"><span class="stat-lbl">CON</span><span class="stat-val" id="s-con">+2</span></div>
+                                <div class="status-stat"><span class="stat-lbl">INT</span><span class="stat-val" id="s-int">+0</span></div>
+                                <div class="status-stat"><span class="stat-lbl">WIS</span><span class="stat-val" id="s-wis">-1</span></div>
+                                <div class="status-stat"><span class="stat-lbl">CHA</span><span class="stat-val" id="s-cha">+1</span></div>
+                            </div>
+                            <div class="inventory-box">
+                                <h4>Inventory & Abilities</h4>
+                                <ul id="status-inventory-list">
+                                    <!-- Populated by JS -->
+                                </ul>
+                            </div>
+                            <button class="btn btn-secondary btn-small" id="btn-quit-adventure" onclick="quitAdventure()">Abandon Quest</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: WORLD BUILDER (DATABASE EDITOR) -->
+        <section id="section-editor" class="tab-panel">
+            <div class="editor-layout">
+                <!-- Forms Panel -->
+                <div class="editor-forms-column">
+                    <div class="editor-card">
+                        <h2>World Database Manager</h2>
+                        <p class="editor-desc">Legends of Avantris is a living world. Add your own custom characters, locations, or entire campaigns! You can export your customized world into a file to share or import it back at any time.</p>
+                        <div class="db-actions">
+                            <button class="btn btn-success" id="btn-export-db" onclick="exportDatabase()">Export World (JSON)</button>
+                            <label for="import-db-input" class="btn btn-secondary label-btn">
+                                Import World (JSON)
+                                <input type="file" id="import-db-input" accept=".json" style="display:none;" onchange="importDatabase(event)">
+                            </label>
+                            <button class="btn btn-danger" id="btn-reset-db" onclick="resetDatabaseToDefault()">Reset to Canon Lore</button>
+                        </div>
+                    </div>
+
+                    <div class="editor-card tabs-editor">
+                        <div class="editor-tab-nav">
+                            <button class="tab-edit-btn active" id="tab-edit-char" onclick="switchEditorForm('character')">Add Character</button>
+                            <button class="tab-edit-btn" id="tab-edit-loc" onclick="switchEditorForm('location')">Add Location</button>
+                            <button class="tab-edit-btn" id="tab-edit-camp" onclick="switchEditorForm('campaign')">Add Campaign</button>
+                            <button class="tab-edit-btn" id="tab-edit-quest" onclick="switchEditorForm('quest')">Add Quest</button>
+                        </div>
+
+                        <!-- Form: Character -->
+                        <form id="form-add-character" class="editor-form-content" onsubmit="saveCharacter(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="char-campaign">Campaign *</label>
+                                    <select id="char-campaign" required>
+                                        <!-- Populated dynamically by campaigns -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="char-name">Character Name *</label>
+                                    <input type="text" id="char-name" required placeholder="e.g. Chuckles">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="char-race">Race *</label>
+                                    <input type="text" id="char-race" required placeholder="e.g. Goblin">
+                                </div>
+                                <div class="form-group">
+                                    <label for="char-class">Class *</label>
+                                    <input type="text" id="char-class" required placeholder="e.g. Circle of the Moon Druid">
+                                </div>
+                            </div>
+
+                            <div class="form-row stats-row">
+                                <div class="form-group-stat"><label for="stat-str">STR</label><input type="number" id="stat-str" value="10" min="1" max="25"></div>
+                                <div class="form-group-stat"><label for="stat-dex">DEX</label><input type="number" id="stat-dex" value="10" min="1" max="25"></div>
+                                <div class="form-group-stat"><label for="stat-con">CON</label><input type="number" id="stat-con" value="10" min="1" max="25"></div>
+                                <div class="form-group-stat"><label for="stat-int">INT</label><input type="number" id="stat-int" value="10" min="1" max="25"></div>
+                                <div class="form-group-stat"><label for="stat-wis">WIS</label><input type="number" id="stat-wis" value="10" min="1" max="25"></div>
+                                <div class="form-group-stat"><label for="stat-cha">CHA</label><input type="number" id="stat-cha" value="10" min="1" max="25"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="char-bio">Biography / Lore *</label>
+                                <textarea id="char-bio" required placeholder="Describe their role in the campaign, funny personality traits, and background..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="char-quotes">Famous Quotes (separated by new lines)</label>
+                                <textarea id="char-quotes" placeholder="Quote 1&#10;Quote 2"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create Character</button>
+                        </form>
+
+                        <!-- Form: Location -->
+                        <form id="form-add-location" class="editor-form-content hidden" onsubmit="saveLocation(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="loc-campaign">Campaign *</label>
+                                    <select id="loc-campaign" required>
+                                        <!-- Populated dynamically by campaigns -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loc-name">Location Name *</label>
+                                    <input type="text" id="loc-name" required placeholder="e.g. Carnivàle Lecroux">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="loc-description">Description & Lore *</label>
+                                <textarea id="loc-description" required placeholder="Describe what the location looks like, key events that took place here, or dangers..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="loc-danger">Danger Level / Atmosphere</label>
+                                <input type="text" id="loc-danger" placeholder="e.g. Mildly chaotic, high chance of clowns">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create Location</button>
+                        </form>
+
+                        <!-- Form: Campaign -->
+                        <form id="form-add-campaign" class="editor-form-content hidden" onsubmit="saveCampaign(event)">
+                            <div class="form-group">
+                                <label for="camp-id">Campaign ID (No spaces, lowercase) *</label>
+                                <input type="text" id="camp-id" required placeholder="e.g. sails-of-salt">
+                            </div>
+                            <div class="form-group">
+                                <label for="camp-title">Campaign Title *</label>
+                                <input type="text" id="camp-title" required placeholder="e.g. Sails of Salt">
+                            </div>
+                            <div class="form-group">
+                                <label for="camp-desc">Short Description *</label>
+                                <textarea id="camp-desc" required placeholder="Write a summary of this campaign's plot and vibe..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create Campaign</button>
+                        </form>
+
+                        <!-- Form: Quest -->
+                        <form id="form-add-quest" class="editor-form-content hidden" onsubmit="saveQuest(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quest-id">Quest ID (No spaces, lowercase) *</label>
+                                    <input type="text" id="quest-id" required placeholder="e.g. dimwood-rescue">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quest-campaign">Campaign *</label>
+                                    <select id="quest-campaign" required>
+                                        <!-- Populated dynamically -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="quest-title">Quest Title *</label>
+                                <input type="text" id="quest-title" required placeholder="e.g. The Dimwood Rescue">
+                            </div>
+                            <div class="form-group">
+                                <label for="quest-intro">Intro Narrative *</label>
+                                <textarea id="quest-intro" required placeholder="Tell the opening story that sets the scene for the heroes..."></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quest-check-stat">D&D Skill Check Stat</label>
+                                    <select id="quest-check-stat">
+                                        <option value="STR">Strength (STR)</option>
+                                        <option value="DEX">Dexterity (DEX)</option>
+                                        <option value="CON">Constitution (CON)</option>
+                                        <option value="INT">Intelligence (INT)</option>
+                                        <option value="WIS">Wisdom (WIS)</option>
+                                        <option value="CHA">Charisma (CHA)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quest-check-dc">Check Difficulty Class (DC)</label>
+                                    <input type="number" id="quest-check-dc" value="12" min="1" max="30">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="quest-check-pass">Narrative on Check Success</label>
+                                <textarea id="quest-check-pass" required placeholder="What happens when the player passes the skill check?"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quest-monster">Monster Guard Name *</label>
+                                    <input type="text" id="quest-monster" required placeholder="e.g. Shadow Wolf">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quest-loot">Loot Chest Item *</label>
+                                    <input type="text" id="quest-loot" required placeholder="e.g. Cloak of Protection">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="quest-victory">Victory Narrative *</label>
+                                <textarea id="quest-victory" required placeholder="What happens when the monster is defeated and they escape?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create DM Quest</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Custom Entities Listing (to allow deletes/reviews) -->
+                <div class="editor-list-column">
+                    <div class="editor-card">
+                        <h3>Active Database Elements</h3>
+                        <p class="editor-desc">Below are the current items in the world registry. Red items represent user-created content which can be deleted.</p>
+                        <div class="database-list-viewer" id="db-elements-list">
+                            <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CHRONICLES & TIMELINE -->
+        <section id="section-timeline" class="tab-panel">
+            <div class="timeline-header-card">
+                <h2>Chronicles of Avantris</h2>
+                <p>The homebrew campaigns of Legends of Avantris are set in a singular, deeply interconnected world (with the exception of Uprooted and space campaigns). Explore the timeline of events, historical landmarks, and character connections leading up to the present day (Prime).</p>
+            </div>
+            <div class="timeline-scroll-area">
+                <div class="timeline-line-axis"></div>
+                <div class="timeline-list" id="timeline-list-container">
+                    <!-- Populated dynamically by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- D20 ROLLER MODAL -->
+    <div id="d20-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <h3 id="d20-check-title">Strength Check</h3>
+            <p id="d20-check-desc">Try to break free from the rope coils...</p>
+            
+            <div class="dice-chamber">
+                <!-- D20 CSS structure -->
+                <div id="d20-die" class="d20-die">
+                    <div class="d20-face" id="d20-result-display">20</div>
+                </div>
+            </div>
+
+            <div class="d20-rolls-math">
+                <span id="d20-math-base">Roll: --</span>
+                <span class="math-operator">+</span>
+                <span id="d20-math-mod">Mod: +0</span>
+                <span class="math-operator">=</span>
+                <span id="d20-math-total">Total: --</span>
+            </div>
+
+            <div id="d20-roll-outcome" class="roll-outcome-message hidden">
+                CRITICAL HIT!
+            </div>
+
+            <div class="d20-actions">
+                <button class="btn btn-primary" id="btn-trigger-roll" onclick="performD20Roll()">Roll Die!</button>
+                <button class="btn btn-secondary hidden" id="btn-continue-story" onclick="resolveD20Check()">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <p>&copy; 2026. Made with love for the Legends of Avantris Community. This is a fan creation.</p>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

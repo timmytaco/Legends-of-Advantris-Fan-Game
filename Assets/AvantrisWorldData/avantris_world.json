@@ -1,0 +1,1085 @@
+{
+    "campaigns": [
+        {
+            "id": "icebound",
+            "name": "Icebound",
+            "era": "1000 BP",
+            "summary": "An Antarctic-like survival campaign set in the freezing, treacherous peaks of northern Avantris.",
+            "isCustom": false
+        },
+        {
+            "id": "curse-of-strahdanya",
+            "name": "Curse of Strahdanya",
+            "era": "400 BP",
+            "summary": "A dark gothic horror campaign set in the mist-shrouded valley of Barovia, featuring a gender-swapped Countess Strahdanya.",
+            "isCustom": false
+        },
+        {
+            "id": "beneath-dark-wings",
+            "name": "Beneath Dark Wings",
+            "era": "200 BP",
+            "summary": "A high-stakes dark fantasy campaign exploring the skies, airships, and hidden threats of Avantris.",
+            "isCustom": false
+        },
+        {
+            "id": "shroud-over-saltmarsh",
+            "name": "Shroud Over Saltmarsh",
+            "era": "190 BP",
+            "summary": "A maritime campaign set in the port town of Saltmarsh, featuring smuggling rings and dark oceanic horrors.",
+            "isCustom": false
+        },
+        {
+            "id": "edge-of-midnight",
+            "name": "Edge of Midnight",
+            "era": "100 BP",
+            "summary": "A gritty fantasy campaign set in a realm of eternal night, steam, and folk horror.",
+            "isCustom": false
+        },
+        {
+            "id": "once-upon-a-witchlight",
+            "name": "Once Upon a Witchlight",
+            "era": "15 BP",
+            "summary": "A whimsical, chaotic D&D 5e campaign following the Carnivàle Lecroux through the Feywild plane of Prismeer.",
+            "isCustom": false
+        },
+        {
+            "id": "prime",
+            "name": "Prime",
+            "era": "Year 0",
+            "summary": "The central campaign in the present day, anchoring the timeline of the continent of Avantris.",
+            "isCustom": false
+        },
+        {
+            "id": "uprooted",
+            "name": "Uprooted",
+            "era": "Spin-Off",
+            "summary": "A woodland adventure detailing small animal vagabonds navigating forest politics, ruins, and predator factions.",
+            "isCustom": false
+        },
+        {
+            "id": "stardust-rhapsody",
+            "name": "Stardust Rhapsody",
+            "era": "Cosmic Future",
+            "summary": "A comedic space-opera campaign featuring the crew of the Rhapsody navigating cosmic empires.",
+            "isCustom": false
+        },
+        {
+            "id": "neon-odyssey",
+            "name": "Neon Odyssey",
+            "era": "Neon Future",
+            "summary": "A cyberpunk space odyssey featuring massive corporate wars and the resistance against the Bloodfleet.",
+            "isCustom": false
+        }
+    ],
+    "characters": [
+        {
+            "id": "rowland-stonebridge",
+            "name": "Rowland Stonebridge",
+            "campaignId": "icebound",
+            "race": "Human (Cabin Boy)",
+            "charClass": "Cabin Boy",
+            "background": "The young cabin boy of the More Abound and son of Captain Vermeil. He fled after discovering the crew resorted to cannibalism.",
+            "quote": "They... they aren't eating salt pork anymore. Please don't go near the galley...",
+            "stats": {
+                "strength": 8,
+                "dexterity": 12,
+                "constitution": 10,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 11
+            },
+            "isCustom": false
+        },
+        {
+            "id": "fenten-armstead",
+            "name": "Fenten Armstead",
+            "campaignId": "icebound",
+            "race": "Human",
+            "charClass": "Boatswain (Bosun)",
+            "background": "The loyal human boatswain of the More Abound and owner of the orange cat Fiesta, slain during the ship mutiny.",
+            "quote": "Keep the rigging tight! Fiesta, get down from the mast!",
+            "stats": {
+                "strength": 14,
+                "dexterity": 13,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 11,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "fiesta-cat",
+            "name": "Fiesta the Cat",
+            "campaignId": "icebound",
+            "race": "Cat",
+            "charClass": "Mascot",
+            "background": "An orange cat with green eyes belonging to Bosun Fenten Armstead, acting as the ship's beloved mascot.",
+            "quote": "*Meow* (Fiesta stares into the frozen blizzard, tail twitching)",
+            "stats": {
+                "strength": 3,
+                "dexterity": 15,
+                "constitution": 10,
+                "intelligence": 4,
+                "wisdom": 12,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "walker-clemons",
+            "name": "Walker Clemons",
+            "campaignId": "icebound",
+            "race": "Human (Herald of Fear)",
+            "charClass": "Mutineer / Cannibal",
+            "background": "A crewman aboard the More Abound who led the cannibalistic mutiny, eventually transforming into a monstrous Herald of Fear.",
+            "quote": "The meat... it stays fresh in the frost. It's the only way we survive.",
+            "stats": {
+                "strength": 15,
+                "dexterity": 12,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 9,
+                "charisma": 8
+            },
+            "isCustom": false
+        },
+        {
+            "id": "princess-of-wrath",
+            "name": "The Princess of Wrath",
+            "campaignId": "icebound",
+            "race": "Ancient White Dragon",
+            "charClass": "Dragon Boss",
+            "background": "The ancient white dragon ruler of Drakkar who destroyed the More Abound and terrorizes Argentholme.",
+            "quote": "Drakkar is mine. Your ship, your bones, and your souls are now frozen artifacts in my gallery.",
+            "stats": {
+                "strength": 22,
+                "dexterity": 10,
+                "constitution": 20,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "peggy-flyler",
+            "name": "Peggy Flyler (Penny)",
+            "campaignId": "uprooted",
+            "race": "Frog",
+            "charClass": "Wizard (School of Divination)",
+            "background": "A chaotic, madcap frog wizard from the Dimwood who channels Divination portents.",
+            "quote": "The cards do not lie! Or maybe they do, but I like the colors!",
+            "stats": {
+                "strength": 8,
+                "dexterity": 16,
+                "constitution": 12,
+                "intelligence": 18,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "barnabos-dreadwake",
+            "name": "Barnabos the Dreadwake",
+            "campaignId": "icebound",
+            "race": "Triton",
+            "charClass": "Barbarian (Path of the Beast)",
+            "background": "An aquatic warrior adapted to subzero ocean currents. Barnabos sprouts claws and fangs when he rages under the glacial ice.",
+            "quote": "The ice does not care for your warmth. Only steel and bone endure.",
+            "stats": {
+                "strength": 17,
+                "dexterity": 14,
+                "constitution": 16,
+                "intelligence": 8,
+                "wisdom": 12,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "jornir-frost",
+            "name": "Jornir",
+            "campaignId": "icebound",
+            "race": "Firbolg",
+            "charClass": "Druid (Circle of the Land - Tundra)",
+            "background": "A giant-kin who channels the freezing winds and frozen pine spirits to help the shipwrecked crew survive Drakkar.",
+            "quote": "The spirits of the frozen forest whisper to us in the blizzard.",
+            "stats": {
+                "strength": 14,
+                "dexterity": 10,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 18,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "queenie-march",
+            "name": "Queenie March",
+            "campaignId": "icebound",
+            "race": "Rabbitfolk",
+            "charClass": "Ranger",
+            "background": "The party's scout, fleet-footed and adept at tracking game across the frozen, barren tundra.",
+            "quote": "Stay close, and walk in my footprints. The drifts are deep.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 18,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "skrimm-stabbaskotch",
+            "name": "Skrimm Stabbaskotch",
+            "campaignId": "icebound",
+            "race": "Goblin",
+            "charClass": "Warlock",
+            "background": "A mischievous goblin who hears whispers from an ancient god frozen deep inside a glacial crevasse.",
+            "quote": "It speaks to me from under the blue ice. It says we must dig!",
+            "stats": {
+                "strength": 8,
+                "dexterity": 16,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 10,
+                "charisma": 16
+            },
+            "isCustom": false
+        },
+        {
+            "id": "taishen-fireblossom",
+            "name": "Taishen Fireblossom",
+            "campaignId": "icebound",
+            "race": "Red Dragonborn",
+            "charClass": "Sorcerer",
+            "background": "A warm-blooded sorcerer whose fire magic is the only thing keeping the party from freezing to death during blizzard nights.",
+            "quote": "Gather round the flame, or the frost will claim your bones before dawn.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 15,
+                "intelligence": 10,
+                "wisdom": 10,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "captain-vermeil",
+            "name": "Captain Vermeil",
+            "campaignId": "icebound",
+            "race": "Human (NPC)",
+            "charClass": "Grizzled Captain",
+            "background": "The grizzled, stern captain of the merchant ship More Abound who commands the survivors after they crash on Drakkar.",
+            "quote": "This crew survives together, or we freeze in isolation.",
+            "stats": {
+                "strength": 14,
+                "dexterity": 12,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "professor-azran",
+            "name": "Professor Clayton Azran",
+            "campaignId": "curse-of-strahdanya",
+            "race": "Human",
+            "charClass": "Wizard (School of Divination)",
+            "background": "An eccentric academic scholar who led the expedition into the foggy valleys of Barovia. Prof. Azran uses divination spells to study planar rifts.",
+            "quote": "Fascinating... the planar weave here is warped beyond recognition.",
+            "stats": {
+                "strength": 8,
+                "dexterity": 12,
+                "constitution": 14,
+                "intelligence": 18,
+                "wisdom": 16,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "victoria-isaacs",
+            "name": "Victoria Isaacs",
+            "campaignId": "curse-of-strahdanya",
+            "race": "Half-Elf Shadar-kai",
+            "charClass": "Sorcerer (Shadow Magic)",
+            "background": "A mysterious woman born under the influence of the Shadowfell, whose magic lets her slip through mists and command shadow hounds.",
+            "quote": "The mists are my ally; they bend to my shadow.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 13,
+                "intelligence": 12,
+                "wisdom": 10,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "kana-soyokaze",
+            "name": "Kana Soyokaze",
+            "campaignId": "curse-of-strahdanya",
+            "race": "Human",
+            "charClass": "Fighter (Samurai)",
+            "background": "A disciplined warrior who swore an oath of loyalty to protect Professor Azran's expedition at all costs.",
+            "quote": "My blade is sworn to the Professor, and my shield to this expedition.",
+            "stats": {
+                "strength": 18,
+                "dexterity": 14,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "sarnax-edelwood",
+            "name": "Sarnax of the Edelwood",
+            "campaignId": "curse-of-strahdanya",
+            "race": "Treant-kin",
+            "charClass": "Woodland Sorcerer",
+            "background": "A vegetative sorcerer whose woody flesh is decaying due to the dark corrupting energies of Barovian soil.",
+            "quote": "My leaves are falling, but the roots still run deep in this dark earth.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 10,
+                "constitution": 15,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 16
+            },
+            "isCustom": false
+        },
+        {
+            "id": "strahdanya-von-zarovich",
+            "name": "Countess Strahdanya von Zarovich",
+            "campaignId": "curse-of-strahdanya",
+            "race": "Vampire (Antagonist)",
+            "charClass": "Vampire Lord",
+            "background": "The vampire ruler of Barovia. A gender-swapped, tyrannical countess who toys with the party's minds from her castle ravenloft.",
+            "quote": "Welcome to my valley. You will find that escape is... a relative term.",
+            "stats": {
+                "strength": 18,
+                "dexterity": 18,
+                "constitution": 18,
+                "intelligence": 20,
+                "wisdom": 18,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "toa-kamanui",
+            "name": "Toa Kamanui",
+            "campaignId": "beneath-dark-wings",
+            "race": "Goliath",
+            "charClass": "Barbarian (Ancestral Guardian)",
+            "background": "A towering goliath barbarian sailing the sky lanes. Bound to the spirits of his ancestors, Toa fights to defend his airship crew.",
+            "quote": "My ancestors watch us from the clouds! Do not make them laugh at you.",
+            "stats": {
+                "strength": 19,
+                "dexterity": 13,
+                "constitution": 17,
+                "intelligence": 8,
+                "wisdom": 12,
+                "charisma": 9
+            },
+            "isCustom": false
+        },
+        {
+            "id": "iris-sands",
+            "name": "Iris of the Sands",
+            "campaignId": "beneath-dark-wings",
+            "race": "Tabaxi",
+            "charClass": "Cleric",
+            "background": "A highly capable Tabaxi navigation specialist and cleric, steering the Kestrel through storms.",
+            "quote": "The stars do not lie, and neither does my compass.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 16,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 18,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "felix-ackerman",
+            "name": "Felix Ackerman",
+            "campaignId": "beneath-dark-wings",
+            "race": "Human",
+            "charClass": "Wizard",
+            "background": "A sky-faring wizard specializing in aerial flight runes and storm manipulation spell matrices.",
+            "quote": "Runes in the air, magic in the wind. Hold onto the rigging!",
+            "stats": {
+                "strength": 8,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 18,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "lufti-genasi",
+            "name": "Lufti",
+            "campaignId": "beneath-dark-wings",
+            "race": "Air Genasi",
+            "charClass": "Monk",
+            "background": "An agile air genasi monk who performs acrobatics in the rigging of the Kestrel.",
+            "quote": "The wind holds me up. Gravity is just a recommendation.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 19,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 15,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "poros-malthea",
+            "name": "Paladin Poros of Malthea",
+            "campaignId": "shroud-over-saltmarsh",
+            "race": "Aasimar",
+            "charClass": "Paladin (Oath of Glory)",
+            "background": "A glorious aasimar paladin serving aboard the Azure Maiden. Poros seeks legendary deeds in the coastal port of Saltmarsh.",
+            "quote": "Let my halo illuminate the dark ocean trenches!",
+            "stats": {
+                "strength": 16,
+                "dexterity": 10,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 12,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "monty-crumb",
+            "name": "Monty Crumb",
+            "campaignId": "shroud-over-saltmarsh",
+            "race": "Human",
+            "charClass": "Rogue",
+            "background": "The sneaky, cook-turned-thief of the ship Azure Maiden who is always looking for lost gold coins.",
+            "quote": "A pinch of salt in the stew, and a pinch of gold in my pocket.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 18,
+                "constitution": 12,
+                "intelligence": 12,
+                "wisdom": 10,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "kaiyo-pearlfin",
+            "name": "Kaiyo Pearlfin",
+            "campaignId": "shroud-over-saltmarsh",
+            "race": "Triton",
+            "charClass": "Druid",
+            "background": "A defender of the deep sea ecosystems who fights smuggler rings polluting the coastal waters of Saltmarsh.",
+            "quote": "The sea remembers every drop of poison we pour into it.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 12,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 18,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "lethica-nightborne",
+            "name": "Lethica Nightborne",
+            "campaignId": "edge-of-midnight",
+            "race": "Twilight Elf",
+            "charClass": "Cleric (Stryga Loss Domain)",
+            "background": "A sombre, dedicated investigator who seeks to purge the curses plagueing the steam-filled lands of Druskenvald.",
+            "quote": "The mists do not hide the shadows; they are the shadows.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 18,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "jericho-sticks",
+            "name": "Jericho Sticks",
+            "campaignId": "edge-of-midnight",
+            "race": "Scarecrow",
+            "charClass": "Bard (College of Secrets)",
+            "background": "An animated scarecrow bard bound to crop magic. Jericho gathers the secrets of the dead to power his haunting songs.",
+            "quote": "I am made of straw, but my words are heavy as lead.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 16,
+                "constitution": 12,
+                "intelligence": 14,
+                "wisdom": 10,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "briggsy-kratch",
+            "name": "Briggsy Kratch",
+            "campaignId": "edge-of-midnight",
+            "race": "Jinxcursed (Zombie)",
+            "charClass": "Warlock (Crossroads Patron)",
+            "background": "A walking corpse bound by a curse of bad luck. Briggsy made a deal at a planar crossroads to prolong his decay.",
+            "quote": "I'm already dead, mate. The worst that can happen is I fall apart.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 10,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 8,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "marius-renathyr",
+            "name": "Marius Renathyr",
+            "campaignId": "edge-of-midnight",
+            "race": "Dhampir",
+            "charClass": "Blood Hunter",
+            "background": "A lethal stalker of the night who balances vampiric urges with protecting mortal villages in Druskenvald.",
+            "quote": "Blood calls to blood, but steel calls to beasts.",
+            "stats": {
+                "strength": 16,
+                "dexterity": 16,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "farryn-hartsblight",
+            "name": "Farryn of the Hartsblight",
+            "campaignId": "edge-of-midnight",
+            "race": "Satyr",
+            "charClass": "Ranger",
+            "background": "A corrupted woodland guide who tracks beasts that cross from the Feywild boundaries into Druskenvald.",
+            "quote": "The trees tell tales of teeth in the dark.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 18,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "yorgrim-dwarf",
+            "name": "Yorgrim",
+            "campaignId": "edge-of-midnight",
+            "race": "Dwarf",
+            "charClass": "Barbarian",
+            "background": "A rugged miner who survived an encounter in the haunted deeps of the Skitterdeep Mine.",
+            "quote": "Mine deep enough, and you will eventually hit something that bites back.",
+            "stats": {
+                "strength": 18,
+                "dexterity": 12,
+                "constitution": 18,
+                "intelligence": 8,
+                "wisdom": 10,
+                "charisma": 8
+            },
+            "isCustom": false
+        },
+        {
+            "id": "kremy-lecroux",
+            "name": "Kremy Lecroux",
+            "campaignId": "once-upon-a-witchlight",
+            "race": "Alligator Crocodilefolk",
+            "charClass": "Warlock (Death Loa Patron)",
+            "background": "The charismatic, smooth-talking ringleader of the Carnivàle Lecroux. Kremy makes bargains with the dead and utilizes voodoo-inspired magic.",
+            "quote": "Ah, my lovely friends, welcome to Carnivàle Lecroux! Step inside, don't mind the teeth.",
+            "stats": {
+                "strength": 14,
+                "dexterity": 12,
+                "constitution": 16,
+                "intelligence": 10,
+                "wisdom": 8,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "gideon-coal",
+            "name": "Gideon Coal",
+            "campaignId": "once-upon-a-witchlight",
+            "race": "Fire Genasi",
+            "charClass": "Fighter (Chain Brawler)",
+            "background": "The powerhouse muscle of the Carnivàle Lecroux. Gideon is a fire genasi with a blazing temper who fights with heavy metal chains.",
+            "quote": "If it breathes, I can punch it. If it doesn't breathe, I can punch it harder.",
+            "stats": {
+                "strength": 18,
+                "dexterity": 12,
+                "constitution": 16,
+                "intelligence": 8,
+                "wisdom": 10,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "gricko-grimgrin",
+            "name": "Gricko Grimgrin",
+            "campaignId": "once-upon-a-witchlight",
+            "race": "Goblin",
+            "charClass": "Druid (Circle of the Moon)",
+            "background": "An illiterate, hyperactive goblin druid who wildshapes into various swamp critters and was once comically crowned frog monarch.",
+            "quote": "Hootsie, look! A shiny rock! Can we eat it? Let's eat it.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 16,
+                "constitution": 14,
+                "intelligence": 6,
+                "wisdom": 18,
+                "charisma": 8
+            },
+            "isCustom": false
+        },
+        {
+            "id": "morning-frost",
+            "name": "Morning Frost",
+            "campaignId": "once-upon-a-witchlight",
+            "race": "Tiger Tabaxi",
+            "charClass": "Sorcerer (Wild Magic)",
+            "background": "A highly flamboyant, self-absorbed tiger tabaxi sorcerer who values fey aesthetics and unstable wild magic surges above all.",
+            "quote": "Darling, my fur is worth more than this entire village.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 18,
+                "constitution": 12,
+                "intelligence": 12,
+                "wisdom": 8,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "chuckles-spirit",
+            "name": "Chuckles the Clown",
+            "campaignId": "once-upon-a-witchlight",
+            "race": "Haunting Specter",
+            "charClass": "Clown / Jester",
+            "background": "A malignant, dark fey spirit of a clown who was punched to death by Gideon Coal and now haunts him as a poltergeist.",
+            "quote": "Would you like a balloon? They're filled with my last breaths!",
+            "stats": {
+                "strength": 8,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 14,
+                "wisdom": 10,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "rodek-stonehearth",
+            "name": "Rodek Stonehearth",
+            "campaignId": "prime",
+            "race": "Hill Dwarf",
+            "charClass": "Cleric (Forge Domain)",
+            "background": "The stout dwarven forge cleric of the Prime era. Rodek loves heavy hammers, fine ironworks, and stout ale.",
+            "quote": "A dwarf is only as good as the steel in his hand and the ale in his cup.",
+            "stats": {
+                "strength": 15,
+                "dexterity": 10,
+                "constitution": 18,
+                "intelligence": 10,
+                "wisdom": 16,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "vandrys-truestrike",
+            "name": "Vandrys Truestrike",
+            "campaignId": "prime",
+            "race": "Elf",
+            "charClass": "Rogue (Archer)",
+            "background": "A lethal elven archer and scout who maps the shifting borders of Prime.",
+            "quote": "An arrow speaks louder than words when negotiations fail.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 18,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 14,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "anulin-wizard",
+            "name": "Anulin",
+            "campaignId": "prime",
+            "race": "Elf",
+            "charClass": "Wizard",
+            "background": "An elven wizard conducting dimensional research into the planar fractures leaking fey magic.",
+            "quote": "The dimensional ley lines are cracking. We must seal them.",
+            "stats": {
+                "strength": 8,
+                "dexterity": 14,
+                "constitution": 12,
+                "intelligence": 18,
+                "wisdom": 16,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "sylvie-druid",
+            "name": "Sylvie",
+            "campaignId": "prime",
+            "race": "Halfling",
+            "charClass": "Druid",
+            "background": "A halfling druid who heals continental root systems corrupted by ancient shadow leaks.",
+            "quote": "Listen to the moss. It remembers the worlds that came before.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 14,
+                "constitution": 14,
+                "intelligence": 10,
+                "wisdom": 18,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "bitsy-mouse",
+            "name": "Bitsy",
+            "campaignId": "uprooted",
+            "race": "Field Mouse",
+            "charClass": "Rogue (Swashbuckler)",
+            "background": "A tiny field mouse who wields a sewing needle as a rapier and acts as a spy for the Critter Alliance.",
+            "quote": "I am small, but my rage is immeasurable!",
+            "stats": {
+                "strength": 6,
+                "dexterity": 20,
+                "constitution": 12,
+                "intelligence": 14,
+                "wisdom": 12,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "grumley-badger",
+            "name": "Grumley",
+            "campaignId": "uprooted",
+            "race": "Badger",
+            "charClass": "Barbarian (Path of the Giant)",
+            "background": "A big, lazy badger barbarian and cook who fights with a heavy iron frying pan to protect his friends.",
+            "quote": "A good nap is worth three gold coins.",
+            "stats": {
+                "strength": 18,
+                "dexterity": 10,
+                "constitution": 18,
+                "intelligence": 8,
+                "wisdom": 12,
+                "charisma": 8
+            },
+            "isCustom": false
+        },
+        {
+            "id": "hazel-squirrel",
+            "name": "Hazel",
+            "campaignId": "uprooted",
+            "race": "Squirrel",
+            "charClass": "Ranger",
+            "background": "A quick-witted squirrel archer who defends the forest canopy from invading cat regiments.",
+            "quote": "One shot, one nut. Keep your eyes on the branches.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 17,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 14,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "captain-pyke",
+            "name": "Captain Pyke",
+            "campaignId": "stardust-rhapsody",
+            "race": "Human",
+            "charClass": "Bounty Hunter",
+            "background": "A gruff space bounty hunter who commands the starship Rhapsody through lawless galaxies.",
+            "quote": "The bounty is worth more if you're alive, but I don't mind taking a cut.",
+            "stats": {
+                "strength": 14,
+                "dexterity": 16,
+                "constitution": 14,
+                "intelligence": 12,
+                "wisdom": 12,
+                "charisma": 14
+            },
+            "isCustom": false
+        },
+        {
+            "id": "rett-pilot",
+            "name": "Rett",
+            "campaignId": "stardust-rhapsody",
+            "race": "Human",
+            "charClass": "Ace Pilot",
+            "background": "The hotshot ace pilot of the Rhapsody, known for executing impossible ship dogfight maneuvers.",
+            "quote": "Hold onto your seats. I'm going to make us fly through this black hole.",
+            "stats": {
+                "strength": 10,
+                "dexterity": 18,
+                "constitution": 12,
+                "intelligence": 14,
+                "wisdom": 10,
+                "charisma": 12
+            },
+            "isCustom": false
+        },
+        {
+            "id": "chuckles-space",
+            "name": "Chuckles (Space Jester)",
+            "campaignId": "stardust-rhapsody",
+            "race": "Alien Clonal",
+            "charClass": "Jester / Rogue",
+            "background": "A cloned jester carrying the digitized mind of the original Chuckles the Clown, causing galactic mischief.",
+            "quote": "Squeak! Gideon, you can't punch me in a vacuum!",
+            "stats": {
+                "strength": 8,
+                "dexterity": 16,
+                "constitution": 12,
+                "intelligence": 14,
+                "wisdom": 10,
+                "charisma": 18
+            },
+            "isCustom": false
+        },
+        {
+            "id": "vigilante-neon",
+            "name": "Vigilante Neon",
+            "campaignId": "neon-odyssey",
+            "race": "Cyborg",
+            "charClass": "Rogue (Cyber-Infiltrator)",
+            "background": "A cybernetically enhanced infiltrator in Megacity 9 who hacks corporate servers to expose Bloodfleet projects.",
+            "quote": "Corporate firewalls are made to be shattered.",
+            "stats": {
+                "strength": 12,
+                "dexterity": 19,
+                "constitution": 14,
+                "intelligence": 15,
+                "wisdom": 10,
+                "charisma": 10
+            },
+            "isCustom": false
+        },
+        {
+            "id": "bloodfleet-defector",
+            "name": "Bloodfleet Defector",
+            "campaignId": "neon-odyssey",
+            "race": "Cyborg",
+            "charClass": "Fighter",
+            "background": "A former shock trooper of the Bloodfleet corporate navy who defected to the outer system resistance.",
+            "quote": "I fired my last shot for the corporation. Now I fire for the crew.",
+            "stats": {
+                "strength": 16,
+                "dexterity": 12,
+                "constitution": 15,
+                "intelligence": 10,
+                "wisdom": 10,
+                "charisma": 12
+            },
+            "isCustom": false
+        }
+    ],
+    "locations": [
+        {
+            "id": "drakkar-frost-wastes",
+            "name": "Drakkar Frost Wastes",
+            "campaignId": "icebound",
+            "description": "A freezing, treacherous wasteland in northern Avantris where survivors fight blizzards and ice giants.",
+            "isCustom": false
+        },
+        {
+            "id": "castle-ravenloft",
+            "name": "Castle Ravenloft",
+            "campaignId": "curse-of-strahdanya",
+            "description": "The gothic stronghold of Countess Strahdanya von Zarovich, looming high on a cliff over the Barovian valley.",
+            "isCustom": false
+        },
+        {
+            "id": "death-house",
+            "name": "Death House",
+            "campaignId": "curse-of-strahdanya",
+            "description": "A haunted, sanity-draining manor on the edge of the Barovian woods.",
+            "isCustom": false
+        },
+        {
+            "id": "skyport-stryga",
+            "name": "Skyport Stryga",
+            "campaignId": "beneath-dark-wings",
+            "description": "A floating island harbor and sky-city that served as the center of aerial commerce before the great collapse.",
+            "isCustom": false
+        },
+        {
+            "id": "saltmarsh-port",
+            "name": "Saltmarsh Port",
+            "campaignId": "shroud-over-saltmarsh",
+            "description": "A damp coastal port town infested with sea-devils, smugglers, and underwater cults.",
+            "isCustom": false
+        },
+        {
+            "id": "druskenvald-streets",
+            "name": "Druskenvald Streets",
+            "campaignId": "edge-of-midnight",
+            "description": "Steam-filled cobblestone streets under a sky of eternal night, plagued by werewolves and corporate shadow operations.",
+            "isCustom": false
+        },
+        {
+            "id": "skitterdeep-mine",
+            "name": "Skitterdeep Mine",
+            "campaignId": "edge-of-midnight",
+            "description": "A haunted, deep underground mining complex where workers encountered ancient dark entities.",
+            "isCustom": false
+        },
+        {
+            "id": "carnivale-lecroux",
+            "name": "Carnivàle Lecroux",
+            "campaignId": "once-upon-a-witchlight",
+            "description": "A colorful, slightly shady traveling circus caravan serving as a cover for magic scams.",
+            "isCustom": false
+        },
+        {
+            "id": "prismeer-swamps",
+            "name": "The Hither Swamps of Prismeer",
+            "campaignId": "once-upon-a-witchlight",
+            "description": "A soggy Feywild swamp ruled by the swamp-hag Bavlorna Blightstraw.",
+            "isCustom": false
+        },
+        {
+            "id": "stonehearth-forge",
+            "name": "Stonehearth Forge",
+            "campaignId": "prime",
+            "description": "A massive, legendary dwarven mining and metalworking forge at the center of the Prime continent.",
+            "isCustom": false
+        },
+        {
+            "id": "dimwood-forest",
+            "name": "The Deep Dimwood",
+            "campaignId": "uprooted",
+            "description": "An ancient woodland plane populated by factions of warring animal vagabonds, cats, and crows.",
+            "isCustom": false
+        },
+        {
+            "id": "rhapsody-starship",
+            "name": "The Starship Rhapsody",
+            "campaignId": "stardust-rhapsody",
+            "description": "A retro-futurism space vessel piloted by Pyke and Rett, which serves as the crew's mobile base.",
+            "isCustom": false
+        },
+        {
+            "id": "megacity-9",
+            "name": "Megacity 9",
+            "campaignId": "neon-odyssey",
+            "description": "A neon-drenched cyberpunk metropolis dominated by corporate guilds and scanner drones.",
+            "isCustom": false
+        }
+    ],
+    "compendium": {
+        "classes": [
+            {
+                "id": "fighter",
+                "name": "Fighter",
+                "source": "Legends of Avantris / D&D 5e Standard",
+                "hitDice": "1d10",
+                "primaryStat": "Strength or Dexterity",
+                "description": "Fighters are master combatants of weapons and battlefield tactics. In Avantris campaigns (like Once Upon a Witchlight), Gideon Coal represents the subclass of heavy frontline protection, combining pure physical force with tactical actions.",
+                "features": [
+                    { "name": "Action Surge", "desc": "Instantly regain 1 Main Action to use on the current combat turn (usable once per combat encounter)." },
+                    { "name": "Second Wind", "desc": "Regain 1d10 + Constitution modifier HP as a Bonus Action (usable once per combat)." }
+                ]
+            },
+            {
+                "id": "rogue",
+                "name": "Rogue",
+                "source": "Legends of Avantris / D&D 5e Standard",
+                "hitDice": "1d8",
+                "primaryStat": "Dexterity",
+                "description": "Rogues use stealth, precision strikes, and sneak attacks to outmaneuver opponents. Kremy Lispon represents the Arcane Trickster rogue, combining stealth tactics with arcane trickery and illusion magic.",
+                "features": [
+                    { "name": "Sneak Attack", "desc": "Deals +2d6 extra damage once per turn when attacking a target adjacent to another ally." },
+                    { "name": "Cunning Action", "desc": "Allows player to Dash, Dodge, or Disengage as a Bonus Action instead of a Main Action." }
+                ]
+            },
+            {
+                "id": "fey-sorcerer",
+                "name": "Fey Sorcerer / Wild Magic",
+                "source": "Legends of Avantris Homebrew Rules",
+                "hitDice": "1d6",
+                "primaryStat": "Charisma",
+                "description": "Sorcerers possess innate magic granted by planar bloodlines or Feywild exposure. Magic flows naturally, sometimes triggering chaotic Wild Magic Surges during spell casting.",
+                "features": [
+                    { "name": "Wild Magic Surge", "desc": "Rolls a d6 on spell cast to trigger a random chaotic effect (e.g. fire burst, healing, or disadvantage)." }
+                ]
+            },
+            {
+                "id": "dryad-sentinel",
+                "name": "Dryad Sentinel",
+                "source": "Uprooted Campaign Rules",
+                "hitDice": "1d8",
+                "primaryStat": "Wisdom",
+                "description": "Dryad Sentinels are forest defenders who can call upon the woodland plane of the Deep Dimwood (like Peggy/Penny in Uprooted) to summon vines and roots.",
+                "features": [
+                    { "name": "Dryad Growth", "desc": "Summons vines that entrap an enemy, dealing 1d6 piercing damage and reducing their movement speed by 2 cells." }
+                ]
+            }
+        ],
+        "races": [
+            {
+                "id": "human",
+                "name": "Human",
+                "description": "Highly adaptable, found across all sea continents of Avantris.",
+                "abilityScoreIncrease": "+1 to all stats"
+            },
+            {
+                "id": "dryad",
+                "name": "Dryad",
+                "description": "Nature spirits bound to ancient trees, prominent in the woodland spin-off Uprooted.",
+                "abilityScoreIncrease": "+2 Wisdom, +1 Dexterity"
+            },
+            {
+                "id": "cyborg",
+                "name": "Cyborg",
+                "description": "Constructed or enhanced humanoids found in Neon Odyssey.",
+                "abilityScoreIncrease": "+2 Constitution, +1 Strength"
+            }
+        ]
+    }
+}
