@@ -172,6 +172,7 @@ namespace Avantris
         private bool playerIsDodging = false;
         private bool playerIsDisengaged = false;
         private bool monsterIsDisengaged = false;
+        private bool monsterIsDodging = false;
 
         [Header("Active Skill QTE System")]
         public QteType activeQteType = QteType.None;
@@ -215,6 +216,7 @@ namespace Avantris
         private float qteTimeSpent = 0f;
         private int qteBounceCount = 0;
         private float qteDecayMultiplier = 1.0f;
+        private float qteSpeedBonusMultiplier = 1.0f;
 
         // Spell Combo & Multi-Beat Rhythm fields
         private bool inComboPhase = false;
@@ -257,6 +259,7 @@ namespace Avantris
         private bool isAimingAttack = false;
         private string aimingType = "";
         private List<Vector3Int> highlightedCells = new List<Vector3Int>();
+        private List<string> collateralWarnings = new List<string>();
 
         void Start()
         {
@@ -271,7 +274,7 @@ namespace Avantris
             LoadWorldDatabase();
             InitializeQuestTrees();
 
-            if (combatSystem == null) combatSystem = FindObjectOfType<GridCombatSystem>();
+            if (combatSystem == null) combatSystem = FindAnyObjectByType<GridCombatSystem>();
         }
 
         void Update()
@@ -1246,7 +1249,7 @@ namespace Avantris
             Debug.LogWarning("💀 DEFEAT! You have fallen in 3D combat.");
             
             // Teleport player back to the beginning starting zone
-            ZoneManager zm = FindObjectOfType<ZoneManager>();
+            ZoneManager zm = FindAnyObjectByType<ZoneManager>();
             if (zm != null)
             {
                 zm.SwitchZone(zm.startingZoneId);
@@ -2536,14 +2539,14 @@ namespace Avantris
                     highlightedCells.Add(monsterCombatState.gridPosition);
                     break;
                 case "Spell":
-                    highlightedCells = combatSystem.CalculateAoE(AbilityAoEShape.Blast, monsterCombatState.gridPosition, 2);
+                    highlightedCells = combatSystem.CalculateAoE(monsterCombatState.gridPosition, Vector3Int.zero, CreatePreviewAbility(AbilityAoEShape.Blast, radius: 2));
                     break;
                 case "Buff":
-                    highlightedCells = combatSystem.CalculateAoE(AbilityAoEShape.Blast, playerCombatState.gridPosition, 1);
+                    highlightedCells = combatSystem.CalculateAoE(playerCombatState.gridPosition, Vector3Int.zero, CreatePreviewAbility(AbilityAoEShape.Blast, radius: 1));
                     break;
                 case "Taunt":
                     Vector3Int dir = monsterCombatState.gridPosition - playerCombatState.gridPosition;
-                    highlightedCells = combatSystem.CalculateAoE(AbilityAoEShape.Cone, playerCombatState.gridPosition, 3, dir);
+                    highlightedCells = combatSystem.CalculateAoE(playerCombatState.gridPosition, dir, CreatePreviewAbility(AbilityAoEShape.Cone, length: 3));
                     break;
             }
             
@@ -2569,6 +2572,16 @@ namespace Avantris
             }
 
             Debug.Log($"[Aiming] prepped target aiming for {type}. Highlighting {highlightedCells.Count} cells with {collateralWarnings.Count} collateral warnings.");
+        }
+
+        private CombatAbility CreatePreviewAbility(AbilityAoEShape shape, int radius = 0, int length = 0)
+        {
+            return new CombatAbility
+            {
+                shape = shape,
+                radiusInSpaces = radius,
+                lengthInSpaces = length
+            };
         }
 
         private void DrawAimingOverlayInterface()

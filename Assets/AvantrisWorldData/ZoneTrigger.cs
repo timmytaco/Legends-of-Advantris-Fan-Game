@@ -24,7 +24,7 @@ namespace Avantris
             // Check if player collided
             if (other.CompareTag("Player"))
             {
-                ZoneManager manager = FindObjectOfType<ZoneManager>();
+                ZoneManager manager = FindAnyObjectByType<ZoneManager>();
                 if (manager != null)
                 {
                     manager.SwitchZone(targetZoneId, targetSpawnName);
