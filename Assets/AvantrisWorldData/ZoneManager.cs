@@ -58,7 +58,7 @@ namespace Avantris
             // Toggle travel map menu with M key (if not actively in overworld transit or combat)
             if (Input.GetKeyDown(KeyCode.M) && !isTraveling)
             {
-                AvantrisUnityBridge bridge = FindObjectOfType<AvantrisUnityBridge>();
+                AvantrisUnityBridge bridge = FindAnyObjectByType<AvantrisUnityBridge>();
                 if (bridge != null && bridge.isGridCombatActive) return;
 
                 showTravelMenu = !showTravelMenu;
@@ -82,7 +82,7 @@ namespace Avantris
             showTravelMenu = false;
 
             // Lock player controls during voyage
-            AvantrisUnityBridge bridge = FindObjectOfType<AvantrisUnityBridge>();
+            AvantrisUnityBridge bridge = FindAnyObjectByType<AvantrisUnityBridge>();
             if (bridge != null)
             {
                 bridge.SetControlsEnabled(false);
@@ -95,7 +95,7 @@ namespace Avantris
             SwitchZone(targetTravelZone.zoneId, targetTravelSpawn);
 
             // Restore player controls and cursor state
-            AvantrisUnityBridge bridge = FindObjectOfType<AvantrisUnityBridge>();
+            AvantrisUnityBridge bridge = FindAnyObjectByType<AvantrisUnityBridge>();
             if (bridge != null)
             {
                 bridge.SetControlsEnabled(true);
