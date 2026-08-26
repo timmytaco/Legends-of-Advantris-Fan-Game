@@ -168,3 +168,7 @@ Make sure the repo `.gitignore` is present and that Unity is opening the reposit
 - Do not commit `Library`, `Temp`, `Obj`, `Build`, `Builds`, `Logs`, or `UserSettings`.
 - Avoid moving or renaming assets outside Unity unless you also keep the matching `.meta` files intact.
 - Prefer opening and moving assets through Unity Editor so references and GUIDs stay stable.
+
+## Engineering Notes
+
+See `docs/engineering-suggestions.md` for proposed next-step cleanup items now that the project imports and runs in Unity.
